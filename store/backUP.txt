@@ -1,0 +1,1 @@
+"watch-poll": "npm run watch -- --watch-poll",
