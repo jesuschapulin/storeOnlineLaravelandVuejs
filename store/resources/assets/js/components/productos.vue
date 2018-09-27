@@ -101,8 +101,8 @@
 						  		</div>
 				      		</div>
 						  
-						  <a href="#" class="ml-1 btn btn-outline-info pt-3" v-on:click.prevent="lessProduct()">-</a>
-						  <a href="#" class="ml-1 btn btn-outline-info pt-3" v-on:click.prevent="moreProduct()">+</a>
+						  <a href="#" class="ml-1 btn btn-outline-info pt-3 mt-4 mb-3" v-on:click.prevent="lessProduct()">-</a>
+						  <a href="#" class="ml-1 btn btn-outline-info pt-3 mt-4 mb-3" v-on:click.prevent="moreProduct()">+</a>
 						  <label class="ml-1">precio:</label>
 						  <b class="ml-1">{{newAddProducto.precioProduct}}</b>
 						  <label class="ml-1">cantidad:</label>
@@ -111,7 +111,7 @@
 						  <b class="ml-1">{{newAddProducto.totalProduct}}</b>
 						</div>
 					    <div class="row">
-							<div class="col-12 d-flex justify-content-end">
+							<div class="col-12 d-flex justify-content-center">
 								<input type="submit" class="btn btn-primary" value="Continuar"/>
 			        			<button type="button" class="btn btn-simple" data-dismiss="modal">Cancelar</button>
 							</div>

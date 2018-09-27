@@ -31516,8 +31516,9 @@ var loginComponent = __webpack_require__(62);
 var registerComponent = __webpack_require__(67);
 var barra = __webpack_require__(72);
 var Profile = __webpack_require__(77);
+var pedidos = __webpack_require__(88);
 
-var routes = [{ path: '/', component: productosComponent }, { path: '/Login', component: loginComponent }, { path: '/Register', component: registerComponent }, { path: '/Dashboard', component: dashboardComponent }, { path: '/Profile', component: Profile }];
+var routes = [{ path: '/', component: productosComponent }, { path: '/Login', component: loginComponent }, { path: '/Register', component: registerComponent }, { path: '/Dashboard', component: dashboardComponent }, { path: '/Profile', component: Profile }, { path: '/Pedidos', component: pedidos }];
 
 var router = new __WEBPACK_IMPORTED_MODULE_1_vue_router__["a" /* default */]({
   mode: 'history',
@@ -57377,7 +57378,8 @@ var render = function() {
                         _c(
                           "a",
                           {
-                            staticClass: "ml-1 btn btn-outline-info pt-3",
+                            staticClass:
+                              "ml-1 btn btn-outline-info pt-3 mt-4 mb-3",
                             attrs: { href: "#" },
                             on: {
                               click: function($event) {
@@ -57392,7 +57394,8 @@ var render = function() {
                         _c(
                           "a",
                           {
-                            staticClass: "ml-1 btn btn-outline-info pt-3",
+                            staticClass:
+                              "ml-1 btn btn-outline-info pt-3 mt-4 mb-3",
                             attrs: { href: "#" },
                             on: {
                               click: function($event) {
@@ -57644,7 +57647,7 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "row" }, [
-      _c("div", { staticClass: "col-12 d-flex justify-content-end" }, [
+      _c("div", { staticClass: "col-12 d-flex justify-content-center" }, [
         _c("input", {
           staticClass: "btn btn-primary",
           attrs: { type: "submit", value: "Continuar" }
@@ -60294,7 +60297,7 @@ exports = module.exports = __webpack_require__(6)(false);
 
 
 // module
-exports.push([module.i, "\n#btn_singin{\n\tbackground: rgba(0,0,0,0);\n\tborder-style: solid;\n\tborder-width: 3px;\n\tborder-color: #563d7c;\n\tcolor: #563d7c;\n}\n#btn_singin:hover{\n\tbackground-color: #563d7c;\n\tcolor: white;\n}\n#barrita{\n\tposition: fixed;\n    z-index: 1;\n    top: 0;\n    width: 100%;\n}\n.dropdown-item{\n\tcolor: #9c27b0;\n}\n.dropdown-item:hover{\n\tcolor: #FFFFFF;\n\tbackground-color: #9c27b0;\n}\n.nav-item{\n\tbackground-color: rgba(0,0,0,0);\n}\n.nav-item:hover{\n\tbackground-color: rgba(0,0,0,0.4);\n}\n\n", ""]);
+exports.push([module.i, "\n#btn_singin{\n\tbackground: rgba(0,0,0,0);\n\tborder-style: solid;\n\tborder-width: 3px;\n\tborder-color: #563d7c;\n\tcolor: #563d7c;\n}\n#btn_singin:hover{\n\tbackground-color: #563d7c;\n\tcolor: white;\n}\n#barrita{\n\tposition: fixed;\n    z-index: 1;\n    top: 0;\n    width: 100%;\n    border-bottom-style: solid;\n    border-bottom-color: #563d7c;\n    border-bottom-width: 2px;\n}\n.dropdown-item{\n\tcolor: #9c27b0;\n}\n.dropdown-item:hover{\n\tcolor: #FFFFFF;\n\tbackground-color: #9c27b0;\n}\n.nav-item{\n\tbackground-color: rgba(0,0,0,0);\n}\n.nav-item:hover{\n\tbackground-color: rgba(0,0,0,0.4);\n}\n\n", ""]);
 
 // exports
 
@@ -60307,6 +60310,8 @@ exports.push([module.i, "\n#btn_singin{\n\tbackground: rgba(0,0,0,0);\n\tborder-
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_jquery__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_jquery__);
+//
+//
 //
 //
 //
@@ -60427,7 +60432,7 @@ var render = function() {
     },
     [
       _c("a", { staticClass: "navbar-brand", attrs: { href: "#" } }, [
-        _vm._v("Store")
+        _vm._v("StoreOnline")
       ]),
       _vm._v(" "),
       _vm._m(0),
@@ -60526,7 +60531,7 @@ var render = function() {
                       {
                         staticClass: "dropdown-item",
                         style: { display: _vm.stateSession },
-                        attrs: { to: "pedidos" }
+                        attrs: { to: "/pedidos" }
                       },
                       [
                         _c("span", { staticClass: "fa fa-shipping-fast" }, [
@@ -60691,7 +60696,7 @@ exports = module.exports = __webpack_require__(6)(false);
 
 
 // module
-exports.push([module.i, "\n.bg-purple{\n\tbackground-color: #563d7c;\n}\n.btn-rounded{\nborder-style: solid;\nborder-width: 4px;\nborder-color: rgba(0,0,0,0);\nborder-radius: 25px;\n}\n.border-gray{\n\tborder-style: solid;\n\tborder-width: 1px;\n\tborder-color: rgba(0,0,0,0.1);\n}\n.element-profile{\n\tbackground-color: rgba(0,0,0,0);\n\tcolor: white;\n}\n.element-profile:hover{\n\tcolor: #563d7c;\n\tbackground-color: white;\n}\n", ""]);
+exports.push([module.i, "\n.bg-purple{\n\tbackground-color: #563d7c;\n}\n.btn-rounded{\nborder-style: solid;\nborder-width: 4px;\nborder-color: rgba(0,0,0,0);\nborder-radius: 25px;\n}\n.tooltipPurple{\n\tbackground-color: #563d7c;\n\tdisplay: block !important;\n    z-index: 10000;\n}\n.border-gray{\n\tborder-style: solid;\n\tborder-width: 1px;\n\tborder-color: rgba(0,0,0,0.1);\n}\n.element-profile{\n\tbackground-color: rgba(0,0,0,0);\n\tcolor: white;\n}\n.element-profile:hover{\n\tcolor: #563d7c;\n\tbackground-color: white;\n}\n", ""]);
 
 // exports
 
@@ -61678,6 +61683,148 @@ if (false) {
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 83 */,
+/* 84 */,
+/* 85 */,
+/* 86 */,
+/* 87 */,
+/* 88 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__(89)
+}
+var normalizeComponent = __webpack_require__(3)
+/* script */
+var __vue_script__ = __webpack_require__(91)
+/* template */
+var __vue_template__ = __webpack_require__(92)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = injectStyle
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/assets/js/components/pedidos.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-56d0af07", Component.options)
+  } else {
+    hotAPI.reload("data-v-56d0af07", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 89 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(90);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(7)("15629b70", content, false, {});
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-56d0af07\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./pedidos.vue", function() {
+     var newContent = require("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-56d0af07\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./pedidos.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 90 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(6)(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n\n\n\n\n\n\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 91 */
+/***/ (function(module, exports) {
+
+//
+//
+//
+//
+//
+//
+//
+//
+
+/***/ }),
+/* 92 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _vm._m(0)
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "bg-success" }, [
+      _c("h1", [
+        _vm._v(
+          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic eaque odio, quae iste laborum at voluptatem ipsa pariatur quidem animi quis rem quas harum quia explicabo modi, libero non nesciunt nostrum reiciendis exercitationem rerum amet repellat odit illo. Dolores doloribus, accusamus veritatis odio neque delectus optio labore dolore assumenda voluptas, eos at odit beatae quisquam aut in nobis autem? Eius iure excepturi quas animi, reiciendis vel esse saepe earum. Harum dolores quibusdam natus inventore, distinctio voluptatum cupiditate aperiam quam error laboriosam eaque libero incidunt, facilis iste ab doloremque sed enim eum velit magnam. Esse vel laboriosam deserunt dignissimos dolorum, similique!"
+        )
+      ])
+    ])
+  }
+]
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-56d0af07", module.exports)
+  }
+}
 
 /***/ })
 /******/ ]);

@@ -27,7 +27,7 @@
 		        	<router-link v-bind:style="{'display':stateSession}" class="dropdown-item" to="listas">
 		        		<span class="fa fa-edit"> listas</span>
 		        	</router-link>
-		        	<router-link v-bind:style="{'display':stateSession}" class="dropdown-item" to="pedidos">
+		        	<router-link v-bind:style="{'display':stateSession}" class="dropdown-item" to="/pedidos">
 		        		<span class="fa fa-shipping-fast"> Mis pedidos</span>
 		        	</router-link>
 		        	<router-link v-bind:style="{'display':stateSession}" class="dropdown-item" to="favoritos">
@@ -42,7 +42,9 @@
 		    </ul>
 		    
 		  </div>
+		  
 		</nav>
+		
 </template>
 <script>
 	import jquery from 'jquery'
@@ -121,6 +123,11 @@
 	    z-index: 1;
 	    top: 0;
 	    width: 100%;
+	    border-bottom-style: solid;
+	    border-bottom-color: #563d7c;
+	    border-bottom-width: 2px;
+
+
 	}
 	.dropdown-item{
 		color: #9c27b0;
